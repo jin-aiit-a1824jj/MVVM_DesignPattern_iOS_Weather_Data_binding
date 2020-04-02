@@ -22,10 +22,10 @@ class WeatherDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         if let weatherVM = self.weatherViewModel {
-            self.cityNameLabel.text = weatherVM.name
-            self.currnetTemperatureLabel.text =  "\(weatherVM.currentTemperature.temperature.formatAsDegree)"
-            self.maxTempLabel.text = "\(weatherVM.currentTemperature.temperatureMax.formatAsDegree)"
-            self.minTempLabel.text = "\(weatherVM.currentTemperature.temperatureMin.formatAsDegree)"
+            self.cityNameLabel.text = weatherVM.name.value
+            self.currnetTemperatureLabel.text =  "\(weatherVM.currentTemperature.temperature.value.formatAsDegree)"
+            self.maxTempLabel.text = "\(weatherVM.currentTemperature.temperatureMax.value.formatAsDegree)"
+            self.minTempLabel.text = "\(weatherVM.currentTemperature.temperatureMin.value.formatAsDegree)"
         }
         
     }
