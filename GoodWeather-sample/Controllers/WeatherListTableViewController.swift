@@ -70,9 +70,21 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
     }
     
     private func prepareSegueForSettingsTableViewController(segue: UIStoryboardSegue) {
-           
+        guard let nav =  segue.destination as? UINavigationController else {
+                   fatalError("UINavigationController not found")
+        }
+        
+        guard let settingsTVC = nav.viewControllers.first as? SettingsTableViewController else {
+                   fatalError("SettingsTableViewController not found")
+        }
+        settingsTVC.delegate = self
+    }
+    
+}
 
-           
-       }
+extension WeatherListTableViewController : SettingsDelegate {
+    func settingsDone(vm: SettingsViewModel) {
+        print(vm as Any)
+    }
     
 }

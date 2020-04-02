@@ -58,6 +58,16 @@ class SettingsTableViewController: UITableViewController{
     }
     
     @IBAction func done() {
+        if let delegate = self.delegate {
+            delegate.settingsDone(vm: self.settingsViewModel)
+        }
         self.dismiss(animated: true, completion: nil)
     }
+    
+    var delegate: SettingsDelegate?
+}
+
+
+protocol SettingsDelegate {
+    func settingsDone(vm: SettingsViewModel)
 }
