@@ -74,14 +74,44 @@
                     <view key="view" contentMode="scaleToFill" id="QiV-8X-uET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5j-uM-y45">
+                                <rect key="frame" x="20" y="98" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6p-GP-W34">
+                                <rect key="frame" x="190" y="140" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveCityButtonPressed" destination="tpn-hF-c0n" eventType="touchUpInside" id="J1P-3H-kRu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="leading" secondItem="QiV-8X-uET" secondAttribute="leadingMargin" id="5xZ-Ed-08F"/>
+                            <constraint firstItem="S6p-GP-W34" firstAttribute="top" secondItem="B5j-uM-y45" secondAttribute="bottom" constant="8" id="AMD-ya-NCB"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="centerX" secondItem="S6p-GP-W34" secondAttribute="centerX" id="ZZY-2t-7It"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="trailing" secondItem="QiV-8X-uET" secondAttribute="trailingMargin" id="oHY-BM-biC"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="top" secondItem="5Hk-N7-uMv" secondAttribute="top" constant="42" id="pJ2-YO-voN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5Hk-N7-uMv"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add City" id="UKg-uG-f6L" customClass="Add"/>
+                    <navigationItem key="navigationItem" title="Add City" id="UKg-uG-f6L" customClass="Add">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="9oa-AC-Y6j">
+                            <connections>
+                                <action selector="cloes" destination="tpn-hF-c0n" id="3ER-ku-K3g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityNameTextField" destination="B5j-uM-y45" id="tAT-gh-ctL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTk-lF-R40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2238" y="-192"/>
+            <point key="canvasLocation" x="2237.68115942029" y="-192.1875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cpa-kY-iEe">
