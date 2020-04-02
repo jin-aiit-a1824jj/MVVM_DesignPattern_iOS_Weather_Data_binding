@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655E93DB2435C43700FD9956 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E93DA2435C43700FD9956 /* WeatherDetailsViewController.swift */; };
 		65949DC62435BC9F00CD43B0 /* AddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65949DC52435BC9F00CD43B0 /* AddCityViewModel.swift */; };
 		65949DC92435BD0E00CD43B0 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65949DC82435BD0E00CD43B0 /* BindingTextField.swift */; };
 		659C79582435722400C7A70B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C79572435722400C7A70B /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		655E93DA2435C43700FD9956 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		65949DC52435BC9F00CD43B0 /* AddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewModel.swift; sourceTree = "<group>"; };
 		65949DC82435BD0E00CD43B0 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 		659C79542435722400C7A70B /* GoodWeather-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodWeather-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				659C796C2435743200C7A70B /* WeatherListTableViewController.swift */,
 				659C796E2435747700C7A70B /* AddWeatherCityViewController.swift */,
 				659C79852435926D00C7A70B /* SettingsTableViewController.swift */,
+				655E93DA2435C43700FD9956 /* WeatherDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655E93DB2435C43700FD9956 /* WeatherDetailsViewController.swift in Sources */,
 				659C797B24358E7500C7A70B /* Double+Extensions.swift in Sources */,
 				65949DC92435BD0E00CD43B0 /* BindingTextField.swift in Sources */,
 				659C796D2435743200C7A70B /* WeatherListTableViewController.swift in Sources */,
