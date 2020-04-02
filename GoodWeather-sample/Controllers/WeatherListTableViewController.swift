@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class WeatherListTableViewController: UITableViewController {
+class WeatherListTableViewController: UITableViewController, AddWeatherDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +33,22 @@ class WeatherListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func addWeatherDidSave(vm: WeatherViewModel) {
+        print(vm.name)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nav =  segue.destination as? UINavigationController else {
+            fatalError("UINavigationController not found")
+        }
+        
+        guard let addWeatherCityVC = nav.viewControllers.first as? AddWeatherCityViewController else {
+            fatalError("AddWeatherCityViewController not found")
+        }
+        
+        addWeatherCityVC.delegate = self
+    
     }
 }
