@@ -22,6 +22,7 @@
 		659C79832435914200C7A70B /* 740-gear-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659C79802435914200C7A70B /* 740-gear-toolbar@2x.png */; };
 		659C79842435914200C7A70B /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 659C79812435914200C7A70B /* 740-gear-toolbar.png */; };
 		659C79862435926D00C7A70B /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C79852435926D00C7A70B /* SettingsTableViewController.swift */; };
+		659C798824359A0000C7A70B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C798724359A0000C7A70B /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		659C79802435914200C7A70B /* 740-gear-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@2x.png"; sourceTree = "<group>"; };
 		659C79812435914200C7A70B /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar.png"; sourceTree = "<group>"; };
 		659C79852435926D00C7A70B /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		659C798724359A0000C7A70B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				659C79772435843A00C7A70B /* WeatherListViewModel.swift */,
+				659C798724359A0000C7A70B /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				659C79582435722400C7A70B /* AppDelegate.swift in Sources */,
 				659C797524357E5C00C7A70B /* Webservice.swift in Sources */,
 				659C79782435843A00C7A70B /* WeatherListViewModel.swift in Sources */,
+				659C798824359A0000C7A70B /* SettingsViewModel.swift in Sources */,
 				659C79722435788900C7A70B /* WeatherCell.swift in Sources */,
 				659C796F2435747700C7A70B /* AddWeatherCityViewController.swift in Sources */,
 				659C795A2435722400C7A70B /* SceneDelegate.swift in Sources */,
