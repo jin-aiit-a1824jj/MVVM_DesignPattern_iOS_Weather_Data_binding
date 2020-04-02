@@ -40,6 +40,10 @@ class AddWeatherCityViewController: UIViewController {
     }
     
     var delegate: AddWeatherDelegate?
+    
+    @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var zipCodeTextField: UITextField!
+    
 }
 
 protocol AddWeatherDelegate {

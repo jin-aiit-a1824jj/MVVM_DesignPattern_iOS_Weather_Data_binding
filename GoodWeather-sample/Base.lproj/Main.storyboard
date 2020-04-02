@@ -114,13 +114,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5j-uM-y45">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5j-uM-y45">
                                 <rect key="frame" x="20" y="98" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cj9-AT-0H8">
+                                <rect key="frame" x="20" y="140" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNI-Kb-AbR">
+                                <rect key="frame" x="20" y="182" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6p-GP-W34">
-                                <rect key="frame" x="190" y="140" width="34" height="30"/>
+                                <rect key="frame" x="190" y="238" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveCityButtonPressed" destination="tpn-hF-c0n" eventType="touchUpInside" id="J1P-3H-kRu"/>
@@ -129,11 +139,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="B5j-uM-y45" firstAttribute="leading" secondItem="QiV-8X-uET" secondAttribute="leadingMargin" id="5xZ-Ed-08F"/>
-                            <constraint firstItem="S6p-GP-W34" firstAttribute="top" secondItem="B5j-uM-y45" secondAttribute="bottom" constant="8" id="AMD-ya-NCB"/>
-                            <constraint firstItem="B5j-uM-y45" firstAttribute="centerX" secondItem="S6p-GP-W34" secondAttribute="centerX" id="ZZY-2t-7It"/>
-                            <constraint firstItem="B5j-uM-y45" firstAttribute="trailing" secondItem="QiV-8X-uET" secondAttribute="trailingMargin" id="oHY-BM-biC"/>
-                            <constraint firstItem="B5j-uM-y45" firstAttribute="top" secondItem="5Hk-N7-uMv" secondAttribute="top" constant="42" id="pJ2-YO-voN"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="leading" secondItem="cj9-AT-0H8" secondAttribute="leading" id="0Vb-Mq-2sr"/>
+                            <constraint firstItem="cj9-AT-0H8" firstAttribute="leading" secondItem="mNI-Kb-AbR" secondAttribute="leading" id="Cll-rc-1hq"/>
+                            <constraint firstItem="S6p-GP-W34" firstAttribute="top" secondItem="mNI-Kb-AbR" secondAttribute="bottom" constant="22" id="EoA-Bv-4ZB"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="top" secondItem="5Hk-N7-uMv" secondAttribute="top" constant="42" id="GeJ-4r-hdg"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="trailing" secondItem="QiV-8X-uET" secondAttribute="trailingMargin" id="TYP-2j-ib6"/>
+                            <constraint firstItem="mNI-Kb-AbR" firstAttribute="centerX" secondItem="S6p-GP-W34" secondAttribute="centerX" id="XqQ-oa-VTK"/>
+                            <constraint firstItem="mNI-Kb-AbR" firstAttribute="top" secondItem="cj9-AT-0H8" secondAttribute="bottom" constant="8" id="YLC-Vd-obs"/>
+                            <constraint firstItem="cj9-AT-0H8" firstAttribute="top" secondItem="B5j-uM-y45" secondAttribute="bottom" constant="8" id="fLy-S6-oFc"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="leading" secondItem="QiV-8X-uET" secondAttribute="leadingMargin" id="nYS-BJ-nIb"/>
+                            <constraint firstItem="cj9-AT-0H8" firstAttribute="trailing" secondItem="mNI-Kb-AbR" secondAttribute="trailing" id="nyx-sc-uRk"/>
+                            <constraint firstItem="B5j-uM-y45" firstAttribute="trailing" secondItem="cj9-AT-0H8" secondAttribute="trailing" id="yxO-Vm-5YR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Hk-N7-uMv"/>
                     </view>
@@ -146,6 +162,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityNameTextField" destination="B5j-uM-y45" id="tAT-gh-ctL"/>
+                        <outlet property="stateTextField" destination="cj9-AT-0H8" id="o4Q-5J-b2j"/>
+                        <outlet property="zipCodeTextField" destination="mNI-Kb-AbR" id="5iO-X6-0an"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTk-lF-R40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
