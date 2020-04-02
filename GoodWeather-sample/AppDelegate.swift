@@ -27,10 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func setupDefaultSettings() {
-        
         let userDefatule = UserDefaults.standard
-        userDefatule.set(Unit.fahrenheit.rawValue, forKey: "unit")
-        
+        if userDefatule.value(forKey: "unit") == nil {
+             userDefatule.set(Unit.fahrenheit.rawValue, forKey: "unit")
+        }
     }
     
     // MARK: UISceneSession Lifecycle
