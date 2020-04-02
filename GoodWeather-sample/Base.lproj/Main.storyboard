@@ -10,7 +10,7 @@
         <!--Settings-->
         <scene sceneID="Dd3-NU-mq6">
             <objects>
-                <tableViewController id="vfo-H4-IXZ" sceneMemberID="viewController">
+                <tableViewController id="vfo-H4-IXZ" customClass="SettingsTableViewController" customModule="GoodWeather_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jT3-1U-4YU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,9 @@
                             <outlet property="delegate" destination="vfo-H4-IXZ" id="1If-eR-QjD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="wnd-5T-4xM"/>
+                    <navigationItem key="navigationItem" title="Settings" id="wnd-5T-4xM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="jrJ-6f-kW6"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGW-9b-WdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,12 +88,12 @@
                     <navigationItem key="navigationItem" title="GoodWeather" id="AkJ-EJ-ora">
                         <barButtonItem key="leftBarButtonItem" title="Settings" image="740-gear-toolbar.png" id="Eqo-gf-oNB">
                             <connections>
-                                <segue destination="fmC-ce-Qwl" kind="presentation" id="1Rc-IH-1Nq"/>
+                                <segue destination="fmC-ce-Qwl" kind="presentation" identifier="SettingsTableViewController" id="1Rc-IH-1Nq"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CWs-vk-4k7">
                             <connections>
-                                <segue destination="Q4Z-Ot-6jE" kind="presentation" id="RCB-qb-C7B"/>
+                                <segue destination="Q4Z-Ot-6jE" kind="presentation" identifier="AddWeatherCityViewController" id="RCB-qb-C7B"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
