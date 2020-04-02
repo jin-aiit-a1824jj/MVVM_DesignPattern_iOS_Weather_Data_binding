@@ -18,6 +18,9 @@
 		659C797524357E5C00C7A70B /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C797424357E5C00C7A70B /* Webservice.swift */; };
 		659C79782435843A00C7A70B /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C79772435843A00C7A70B /* WeatherListViewModel.swift */; };
 		659C797B24358E7500C7A70B /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C797A24358E7500C7A70B /* Double+Extensions.swift */; };
+		659C79822435914200C7A70B /* 740-gear-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659C797F2435914200C7A70B /* 740-gear-toolbar@3x.png */; };
+		659C79832435914200C7A70B /* 740-gear-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 659C79802435914200C7A70B /* 740-gear-toolbar@2x.png */; };
+		659C79842435914200C7A70B /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 659C79812435914200C7A70B /* 740-gear-toolbar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		659C797424357E5C00C7A70B /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		659C79772435843A00C7A70B /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		659C797A24358E7500C7A70B /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		659C797F2435914200C7A70B /* 740-gear-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@3x.png"; sourceTree = "<group>"; };
+		659C79802435914200C7A70B /* 740-gear-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@2x.png"; sourceTree = "<group>"; };
+		659C79812435914200C7A70B /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		659C79562435722400C7A70B /* GoodWeather-sample */ = {
 			isa = PBXGroup;
 			children = (
+				659C797E2435913300C7A70B /* Images */,
 				659C797924358E5F00C7A70B /* Extensions */,
 				659C79762435842500C7A70B /* ViewModels */,
 				659C797324357E4500C7A70B /* Services */,
@@ -120,6 +127,16 @@
 				659C797A24358E7500C7A70B /* Double+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		659C797E2435913300C7A70B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				659C79812435914200C7A70B /* 740-gear-toolbar.png */,
+				659C79802435914200C7A70B /* 740-gear-toolbar@2x.png */,
+				659C797F2435914200C7A70B /* 740-gear-toolbar@3x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659C79822435914200C7A70B /* 740-gear-toolbar@3x.png in Resources */,
+				659C79832435914200C7A70B /* 740-gear-toolbar@2x.png in Resources */,
+				659C79842435914200C7A70B /* 740-gear-toolbar.png in Resources */,
 				659C79642435722500C7A70B /* LaunchScreen.storyboard in Resources */,
 				659C79612435722500C7A70B /* Assets.xcassets in Resources */,
 				659C795F2435722400C7A70B /* Main.storyboard in Resources */,
