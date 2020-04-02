@@ -9,7 +9,7 @@
 import Foundation
 
 struct WeatherListViewModel {
-    private var weatherViewModels = [WeatherViewModel]()
+    private(set) var weatherViewModels = [WeatherViewModel]()
     
     mutating func addWEatherViewModel(_ vm: WeatherViewModel){
         self.weatherViewModels.append(vm)
