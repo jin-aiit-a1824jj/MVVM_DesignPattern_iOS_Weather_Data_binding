@@ -19,7 +19,7 @@ final class Webservice{
        
         URLSession.shared.dataTask(with: resource.url) { data, response, error in
             
-            print(data)
+           // print(data)
             
             if let data = data {
                 DispatchQueue.main.async {
