@@ -12,9 +12,13 @@ struct WeatherListViewModel {
     private var weatherViewModels = [WeatherViewModel]()
 }
 
-struct WeatherViewModel {
+struct WeatherViewModel: Decodable {
     let name: String
-    let temperature: Double
-    let temperatureMin: Double
-    let temperatureMax: Double
+    let main: TemperatureViewModel
+}
+
+struct TemperatureViewModel: Decodable {
+    let temp: Double
+    let temp_min: Double
+    let temp_max: Double
 }
