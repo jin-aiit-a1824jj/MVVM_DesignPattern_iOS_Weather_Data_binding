@@ -10,7 +10,7 @@
         <!--GoodWeather-->
         <scene sceneID="aYM-tY-uTw">
             <objects>
-                <tableViewController id="3ro-E7-7Av" sceneMemberID="viewController">
+                <tableViewController id="3ro-E7-7Av" customClass="WeatherListTableViewController" customModule="GoodWeather_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9eV-v5-LWU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,14 +46,14 @@
         <!--Add City-->
         <scene sceneID="GSr-ro-evI">
             <objects>
-                <viewController id="tpn-hF-c0n" sceneMemberID="viewController">
+                <viewController id="tpn-hF-c0n" customClass="AddWeatherCityViewController" customModule="GoodWeather_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QiV-8X-uET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5Hk-N7-uMv"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add City" id="UKg-uG-f6L"/>
+                    <navigationItem key="navigationItem" title="Add City" id="UKg-uG-f6L" customClass="Add"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTk-lF-R40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
