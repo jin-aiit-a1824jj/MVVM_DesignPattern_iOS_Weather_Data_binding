@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		655E93DB2435C43700FD9956 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E93DA2435C43700FD9956 /* WeatherDetailsViewController.swift */; };
 		655E93DE2435D0F300FD9956 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E93DD2435D0F300FD9956 /* WeatherDataSource.swift */; };
+		655E93E02435D56500FD9956 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655E93DF2435D56500FD9956 /* TableViewDataSource.swift */; };
 		65949DC62435BC9F00CD43B0 /* AddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65949DC52435BC9F00CD43B0 /* AddCityViewModel.swift */; };
 		65949DC92435BD0E00CD43B0 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65949DC82435BD0E00CD43B0 /* BindingTextField.swift */; };
 		659C79582435722400C7A70B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C79572435722400C7A70B /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		655E93DA2435C43700FD9956 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		655E93DD2435D0F300FD9956 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
+		655E93DF2435D56500FD9956 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		65949DC52435BC9F00CD43B0 /* AddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewModel.swift; sourceTree = "<group>"; };
 		65949DC82435BD0E00CD43B0 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 		659C79542435722400C7A70B /* GoodWeather-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodWeather-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				655E93DD2435D0F300FD9956 /* WeatherDataSource.swift */,
+				655E93DF2435D56500FD9956 /* TableViewDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				655E93DE2435D0F300FD9956 /* WeatherDataSource.swift in Sources */,
 				659C796D2435743200C7A70B /* WeatherListTableViewController.swift in Sources */,
 				659C79582435722400C7A70B /* AppDelegate.swift in Sources */,
+				655E93E02435D56500FD9956 /* TableViewDataSource.swift in Sources */,
 				659C797524357E5C00C7A70B /* Webservice.swift in Sources */,
 				659C79782435843A00C7A70B /* WeatherListViewModel.swift in Sources */,
 				65949DC62435BC9F00CD43B0 /* AddCityViewModel.swift in Sources */,
