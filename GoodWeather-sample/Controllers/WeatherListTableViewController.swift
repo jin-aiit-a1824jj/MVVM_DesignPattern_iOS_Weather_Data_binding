@@ -48,7 +48,7 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
         
         if segue.identifier == "SettingsTableViewController" {
             prepareSegueForSettingsTableViewController(segue: segue)
-        }else if segue.identifier == "AddWeatherCityViewControllerå" {
+        }else if segue.identifier == "AddWeatherCityViewController" {
             prepareSegueForAddWeatherCityViewController(segue: segue)
         }
        
@@ -85,6 +85,9 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
 extension WeatherListTableViewController : SettingsDelegate {
     func settingsDone(vm: SettingsViewModel) {
         print(vm as Any)
+        
+        self.weatherListViewModel.updateUnit(to: vm.selectedUnit)
+        self.tableView.reloadData()
     }
     
 }
