@@ -23,8 +23,13 @@ class AddWeatherCityViewController: UIViewController {
                 return weatherVM
             }
             
-            Webservice().load(resource: weatherResource){ result in
-                
+            Webservice().load(resource: weatherResource){ [weak self] result in
+                if let weatherVM = result {
+                    if let delegate = self?.delegate{
+                        delegate.addWeatherDidSave(vm: weatherVM)
+                        self?.dismiss(animated: true, completion: nil)
+                    }
+                }
             }
             
         }
@@ -33,4 +38,10 @@ class AddWeatherCityViewController: UIViewController {
     @IBAction func cloes(){
         self.dismiss(animated: true, completion: nil)
     }
+    
+    var delegate: AddWeatherDelegate?
+}
+
+protocol AddWeatherDelegate {
+    func addWeatherDidSave(vm: WeatherViewModel)
 }
