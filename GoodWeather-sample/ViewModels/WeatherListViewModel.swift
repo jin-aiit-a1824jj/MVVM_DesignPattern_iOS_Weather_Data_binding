@@ -59,6 +59,11 @@ struct WeatherViewModel: Decodable {
         case currentTemperature = "main"
     }
     
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        name = Dynamic(try container.decode(String.self, forKey: .name))
+        currentTemperature = try container.decode(TemperatureViewModel.self, forKey: .currentTemperature)
+    }
 }
 
 struct TemperatureViewModel: Decodable {
@@ -70,6 +75,13 @@ struct TemperatureViewModel: Decodable {
         case temperature = "temp"
         case temperatureMin = "temp_min"
         case temperatureMax = "temp_max"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        temperature = Dynamic(try container.decode(Double.self, forKey: .temperature))
+        temperatureMin = Dynamic(try container.decode(Double.self, forKey: .temperatureMin))
+        temperatureMax = Dynamic(try container.decode(Double.self, forKey: .temperatureMax))
     }
 }
 
