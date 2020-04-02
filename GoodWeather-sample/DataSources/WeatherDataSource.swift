@@ -14,7 +14,7 @@ class WeatherDataSource: NSObject, UITableViewDataSource {
     let cellIdentifier: String = "WeatherCell"
     private var weatherListViewModel: WeatherListViewModel
 
-    init(weatherListViewModel: WeatherListViewModel) {
+    init(_ weatherListViewModel: WeatherListViewModel) {
         self.weatherListViewModel = weatherListViewModel
     }
     
@@ -28,11 +28,15 @@ class WeatherDataSource: NSObject, UITableViewDataSource {
         }
         
         let weatherVM = self.weatherListViewModel.modelAt(indexPath.row)
-        cell.cityNameLabel.text = weatherVM.name.value
-        cell.temperatureLabel.text = weatherVM.currentTemperature.temperature.value.formatAsDegree
+        cell.configure(weatherVM)
+        //cell.cityNameLabel.text = weatherVM.name.value
+        //cell.temperatureLabel.text = weatherVM.currentTemperature.temperature.value.formatAsDegree
         
         return cell
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
 }
